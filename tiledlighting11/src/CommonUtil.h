@@ -179,7 +179,7 @@ namespace TiledLighting11
         // Light culling constants.
         // These must match their counterparts in CommonHeader.h
         static const unsigned TILE_RES = 16;
-        static const unsigned MAX_NUM_LIGHTS_PER_TILE = 272;
+        static const unsigned MAX_NUM_LIGHTS_PER_TILE = 1024;
         static const unsigned MAX_NUM_VPLS_PER_TILE = 1024;
 
         // forward rendering render target width and height

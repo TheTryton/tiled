@@ -32,7 +32,7 @@
 
 namespace TiledLighting11
 {
-    static const int MAX_NUM_LIGHTS = 2*1024;
+    static const int MAX_NUM_LIGHTS = 20000;
     static const int MAX_NUM_GRID_OBJECTS = 280;
 
     // These must match their counterparts in CommonHeader.h

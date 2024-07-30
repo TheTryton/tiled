@@ -53,7 +53,7 @@ static const float4 kRadarColors[14] =
 // These must match their counterparts in CommonUtil.h
 //--------------------------------------------------------------------------------------
 #define TILE_RES 16
-#define MAX_NUM_LIGHTS_PER_TILE 272
+#define MAX_NUM_LIGHTS_PER_TILE 1024
 #define MAX_NUM_VPLS_PER_TILE 1024
 
 //--------------------------------------------------------------------------------------

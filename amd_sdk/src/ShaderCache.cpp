@@ -41,6 +41,7 @@
 
 #include <Shlwapi.h>
 #include <algorithm>
+#include <string>
 
 #pragma warning( disable : 4100 ) // disable unreference formal parameter warnings for /W4 builds
 #pragma warning( disable : 4127 ) // disable conditional expression is constant warnings for /W4 builds
@@ -53,7 +54,7 @@ static HANDLE   s_hDoneEvent = 0;
 
 static const wchar_t *FXC_PATH_STRING_LOCAL = L"\\src\\Shaders\\fxc.exe";
 static const wchar_t *DEV_PATH_STRING_LOCAL = L"\\src\\Shaders\\Dev.exe";
-static const wchar_t *FXC_PATH_STRING_INSTALLED_WIN_10_SDK = L"\\Windows Kits\\10\\bin\\x64\\fxc.exe";
+static const wchar_t *FXC_PATH_STRING_INSTALLED_WIN_10_SDK = L"\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\fxc.exe";
 static const wchar_t *FXC_PATH_STRING_INSTALLED_WIN_8_1_SDK = L"\\Windows Kits\\8.1\\bin\\x64\\fxc.exe";
 static const wchar_t *FXC_PATH_STRING_INSTALLED_WIN_8_0_SDK = L"\\Windows Kits\\8.0\\bin\\x64\\fxc.exe";
 static const wchar_t *DEV_PATH_STRING_INSTALLED = L"\\Dev.exe";

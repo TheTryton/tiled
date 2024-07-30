@@ -1116,7 +1116,7 @@ namespace TiledLighting11
 
                 // want to find the base b such that the logb of nMaxNumLightsPerTile is 14
                 // (because we have 14 radar colors)
-                float fLogBase = exp(0.07142857f*log((float)nMaxNumLightsPerTile));
+                float fLogBase = (float)exp(0.07142857f*log((float)nMaxNumLightsPerTile));
 
                 swprintf_s( szBuf, 16, L"> %d", nMaxNumLightsPerTile );
                 pTxtHelper->DrawTextLine( szBuf );

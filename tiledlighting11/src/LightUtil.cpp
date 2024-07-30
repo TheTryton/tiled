@@ -925,11 +925,11 @@ namespace TiledLighting11
                 // x=r_cone*cosine(t)
                 // z=r_cone*sine(t)
                 float t = ((float)i / (float)g_nConeNumTris) * TWO_PI;
-                g_ConeForSpotLightsVertexData[2*i+1].v3Pos = XMFLOAT3( fConeRadius*cos(t), -fConeHeight, fConeRadius*sin(t) );
+                g_ConeForSpotLightsVertexData[2*i+1].v3Pos = XMFLOAT3( fConeRadius* (float)cos(t), -fConeHeight, fConeRadius* (float)sin(t) );
                 g_ConeForSpotLightsVertexData[2*i+1].v2TexCoord = XMFLOAT2( 0.0f, 1.0f );
 
                 // normal = (h_cone*cosine(t), r_cone, h_cone*sine(t))
-                XMFLOAT3 vNormal = XMFLOAT3( fConeHeight*cos(t), fConeRadius, fConeHeight*sin(t) );
+                XMFLOAT3 vNormal = XMFLOAT3( fConeHeight* (float)cos(t), fConeRadius, fConeHeight* (float)sin(t) );
                 XMStoreFloat3( &vNormal, XMVector3Normalize( XMLoadFloat3( &vNormal ) ) );
                 g_ConeForSpotLightsVertexData[2*i+1].v3Norm = vNormal;
 #ifdef _DEBUG
